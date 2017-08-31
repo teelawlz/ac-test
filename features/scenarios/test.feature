@@ -18,5 +18,7 @@ Scenario: Test Search Result and Filter
 	And   all results meet bathroom requirements
 	# And   all results meet meet square footage requirements
 
-  # TODO: Figure out how to get side panel to scroll so square foot selections
-	#       can be done
+Scenario: Log In test with site prism
+	Given a user at the redfin home page
+	When  the user logs into their account
+	Then  they are logged in

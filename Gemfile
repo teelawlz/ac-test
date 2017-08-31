@@ -10,3 +10,4 @@ gem 'pry'
 gem 'rb-readline'
 gem 'rspec-rails', '~> 3.4'
 gem 'selenium-webdriver', require: false
+gem 'site_prism'
