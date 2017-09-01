@@ -8,8 +8,8 @@ end
 When /the user logs into their account$/ do
   @site.home.sign_in_link.click
   @site.home.sign_in_panel.email_sign_in_button.click
-  @site.home.sign_in_panel.email_field.set "tltest100@mailinator.com"
-  @site.home.sign_in_panel.password_field.set "Ohlookanacorn@123"
+  @site.home.sign_in_panel.email_field.set ENV['USER_EMAIL']
+  @site.home.sign_in_panel.password_field.set ENV['USER_PASSWORD']
   @site.home.sign_in_panel.submit_button.click
 end
 
