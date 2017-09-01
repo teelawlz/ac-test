@@ -5,8 +5,7 @@ require 'rspec/expectations'
 require 'selenium-webdriver'
 require 'site_prism'
 
-Dir["#{File.dirname(__FILE__)}/../site/sections/**/*.rb"].each {|file| require file }
-Dir["#{File.dirname(__FILE__)}/../site/pages/**/*.rb"].each {|file| require file }
+require_relative '../site/site.rb'
 
 ENV['BROWSER'] ||= 'chrome'
 
