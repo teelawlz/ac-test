@@ -53,7 +53,7 @@ end
 #=============================
 
 Then /they are logged in$/ do
-  expect(@current_page.user_account_button).to have_text("TLTest")
+  expect(@site.home.user_account_button).to have_text("TLTest")
 end
 
 Then /results meet (.*) requirements$/ do |filter|
