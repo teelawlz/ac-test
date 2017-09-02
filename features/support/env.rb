@@ -1,5 +1,6 @@
 require 'capybara/cucumber'
 require 'capybara/poltergeist'
+require 'dotenv/load'
 require 'pry'
 require 'rspec/expectations'
 require 'selenium-webdriver'
@@ -7,7 +8,7 @@ require 'site_prism'
 
 require_relative '../site/site.rb'
 
-ENV['BROWSER'] ||= 'chrome'
+Dotenv.load
 
 Capybara.default_driver = :selenium
 Capybara.register_driver :selenium do |app|

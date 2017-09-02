@@ -4,6 +4,7 @@ ruby '2.4.0'
 
 gem 'capybara'
 gem 'cucumber'
+gem 'dotenv'
 gem 'faraday'
 gem 'poltergeist'
 gem 'pry'
